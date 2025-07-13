@@ -7,8 +7,6 @@ describe('App', () => {
         expect(response.status).toBe(200);
     });
 });
-const request = require('supertest');
-const app = require('../app');
 describe('App', () => {
     it('should respond with Hello World!', async () => {
         const response = await request(app).get('/');
